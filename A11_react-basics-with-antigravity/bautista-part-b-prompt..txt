@@ -1,0 +1,3 @@
+Analyze the @src\App.css @src\components\tracks\SongList.css styling and
+apply futuristic design improvements and like when the mouse moves there is a particles left behind it. I want it to look like a mobile playlist
+design that doesn't look plain and boring. Don't add new files, just new styling.
