@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Script Basics - Anthony Daniel Bautista</title>
+</head>
+<body>
+  <h1>Loading...</h1>
+
+  <!-- Inline classic script: runs right here, right now -->
+  <script>
+    console.log("Inline script ran - Anthony Daniel Bautista");
+  </script>
+
+  <!-- Classic script: runs immediately where it sits,
+       no import/export, variables can leak to the global scope -->
+  <script src="legacy.js"></script>
+
+  <!-- Module script: waits for HTML parsing to finish (like defer),
+       runs once, has its own scope, and CAN use import/export -->
+  <script type="module" src="app.js"></script>
+
+  <script type="module">
+    import { userInfo } from "./15_modules_export.js";
+    console.log(userInfo.name);
+  </script>
+</body>
+</html>
